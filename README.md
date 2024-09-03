@@ -9,7 +9,6 @@ Este proyecto es un carrusel de imágenes simple construido con vanilla JavaScri
 - [Tecnologías Utilizadas](#tecnologías-utilizadas)
 - [Uso](#uso)
 - [Personalización](#personalización)
-- [Licencia](#licencia)
 
 ## Estructura del Proyecto
 
@@ -39,7 +38,3 @@ Este proyecto es un carrusel de imágenes simple construido con vanilla JavaScri
 - **Imágenes**: Reemplaza las imágenes en el archivo `index.html` con las tuyas actualizando las etiquetas `img`.
 - **Estilo**: Modifica el archivo `style.css` para cambiar la apariencia del carrusel.
 - **Lógica de JavaScript**: Ajusta el comportamiento del carrusel editando el archivo `app.js`.
-
-## Licencia
-
-Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
