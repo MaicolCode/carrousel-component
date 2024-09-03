@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carrusel-content {
+  position: relative;
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+
+  .carrusel-item {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 800px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+
+    article {
+      flex: 0 0 100%;
+      width: 100%;
+      height: 80%;
+      scroll-snap-align: center;
+      display: none;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+    }
+
+    .active {
+      display: block;
+      animation: fadeIn 1s ease-in-out;
+    }
+  }
+
+  a {
+    color: white;
+    cursor: pointer;
+  }
+
+  .left-control {
+    margin-left: 100px;
+  }
+  .right-control {
+    margin-right: 100px;
+  }
+}
+
+.images-content {
+  width: 100%;
+  height: 35%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+  gap: 10px;
+  padding: 10px;
+  overflow-x: scroll;
+  overflow: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+
+  box-sizing: border-box;
+
+  img {
+    width: auto;
+    height: 250px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    scroll-snap-align: center;
+    opacity: 0.7;
+    filter: blur(2px);
+  }
+
+  .marked {
+    border: 2px solid white;
+    opacity: 1;
+    filter: none;
+    animation: filterBlur 0.6s ease-in-out;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes filterBlur {
+  0% {
+    filter: blur(2px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}

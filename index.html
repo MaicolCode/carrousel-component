@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Our unique tag to identify the solution -->
+    <bds />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BigDevSoon Image Carousel challenge</title>
+</head>
+
+<body class="bg-gray-900 flex flex-col items-center justify-center min-h-screen">
+    <main>
+        <section class="carrusel-content">
+            <article class="carrusel-item">
+                <article data-id="1" class="active">
+                    <img src="https://cdn.pixabay.com/photo/2023/12/12/13/28/waterfall-8445292_640.jpg" alt="">
+                </article>
+                <article data-id="2"> <img src="https://cdn.pixabay.com/photo/2018/11/17/22/15/trees-3822149_640.jpg"
+                        alt="">
+                </article>
+                <article data-id="3"><img
+                        src="https://www.thedrinksbusiness.com/content/uploads/2024/05/Argetina-water-640x427.jpg"
+                        alt="">
+                </article>
+                <article data-id="4"><img
+                        src="https://guiadelocio.es/madrid/wp-content/uploads/sites/2/2023/07/iStock-1487266664-640x427.jpg"
+                        alt=""></article>
+
+            </article>
+            <a href="" class="left-control"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-left">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M5 12l14 0" />
+                    <path d="M5 12l4 4" />
+                    <path d="M5 12l4 -4" />
+                </svg></a>
+            <a href="" class="right-control"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M5 12l14 0" />
+                    <path d="M15 16l4 -4" />
+                    <path d="M15 8l4 4" />
+                </svg></a>
+        </section>
+        <section class="images-content">
+            <img data-id-image='1' class="marked"
+                src="https://cdn.pixabay.com/photo/2023/12/12/13/28/waterfall-8445292_640.jpg" alt="">
+            <img data-id-image='2' src="https://cdn.pixabay.com/photo/2018/11/17/22/15/trees-3822149_640.jpg" alt="">
+            <img data-id-image='3'
+                src="https://www.thedrinksbusiness.com/content/uploads/2024/05/Argetina-water-640x427.jpg" alt="">
+            <img data-id-image='4'
+                src="https://guiadelocio.es/madrid/wp-content/uploads/sites/2/2023/07/iStock-1487266664-640x427.jpg"
+                alt="">
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
