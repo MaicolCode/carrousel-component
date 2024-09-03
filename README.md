@@ -37,8 +37,8 @@ Este proyecto es un carrusel de imágenes simple construido con vanilla JavaScri
 ## Personalización
 
 - **Imágenes**: Reemplaza las imágenes en el archivo `index.html` con las tuyas actualizando las etiquetas `img`.
-- **Estilo**: Modifica el archivo `styles.css` para cambiar la apariencia del carrusel.
-- **Lógica de JavaScript**: Ajusta el comportamiento del carrusel editando el archivo `script.js`.
+- **Estilo**: Modifica el archivo `style.css` para cambiar la apariencia del carrusel.
+- **Lógica de JavaScript**: Ajusta el comportamiento del carrusel editando el archivo `app.js`.
 
 ## Licencia
 
